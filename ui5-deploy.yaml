@@ -16,8 +16,11 @@ builder:
         target:
           url: http://stcfin.st.com:8021/
           client: "800"
+        credentials:
+          username: env:MY_USER
+          password: env:MY_PASSWORD  
         app:
-          name: PRODUCTAPP
+          name: Z_PRODUCTAPP
           description: Productapp_mash
           package: $TMP
           transport: ""
